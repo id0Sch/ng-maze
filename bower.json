@@ -1,0 +1,20 @@
+{
+  "name": "ng-maze",
+  "homepage": "https://github.com/id0Sch/ng-maze",
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "angularjs#~1.5.0",
+    "jquery": "~2.2.1",
+    "lodash": "~4.5.1"
+  }
+}
