@@ -1,10 +1,9 @@
-var app = angular.module('ngMaze', ['main', 'stages']);
+/*global angular*/
+var app = angular.module('ngMaze', ['pages']);
 
 
-app.run(['$rootScope', function ($rootScope) {
+// app.run(['$rootScope', function($rootScope) {
 
-}]);
+// }]);
 
-angular.module('main', []).controller('mainCtrl', ['$rootScope', function ($rootScope) {
-    console.log('hi');
-}]);
+app.controller('mainCtrl', ['$rootScope', function($rootScope) {}]);
