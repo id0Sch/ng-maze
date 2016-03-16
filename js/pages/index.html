@@ -1,3 +1,20 @@
-<div class="slide-animate-container">
+<div class="page-container slide-animate-container">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!--<button class="direction-btn up" ng-click="transition('up')" ng-if="activePage.directions.up">-->
+    <!--    <i class="direction-icon fa fa-chevron-up fa-2x"></i>-->
+    <!--</button>-->
+    <!--<button class="direction-btn down" ng-click="transition('down')" ng-if="activePage.directions.down">-->
+    <!--    <i class="direction-icon fa fa-chevron-down fa-2x"></i>-->
+    <!--</button>-->
+    <!--<button class="direction-btn right" ng-click="transition('right')" ng-if="activePage.directions.right">-->
+    <!--    <i class="direction-icon fa fa-chevron-right fa-2x"></i>-->
+    <!--</button>-->
+    <!--<button class="direction-btn left" ng-click="transition('left')" ng-if="activePage.directions.left">-->
+    <!--    <i class="direction-icon fa fa-chevron-left fa-2x"></i>-->
+    <!--</button>-->
+    <go-to ng-if="activePage.directions.left  && active.left" direction="'left'" transition="transition"></go-to>
+    <go-to ng-if="activePage.directions.right && active.right" direction="'right'" transition="transition"></go-to>
+    <go-to ng-if="activePage.directions.down  && active.down" direction="'down'" transition="transition"></go-to>
+    <go-to ng-if="activePage.directions.up    && active.up" direction="'up'" transition="transition"></go-to>
     <div class="active-page slide" ng-include="getActiveHtml()"></div>
 </div>

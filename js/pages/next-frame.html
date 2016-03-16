@@ -3,6 +3,7 @@
     <h1>{{title}}</h1>
 
     <p>{{msg}}</p>
-    <a href="#" ng-click="transition('left')">click me</a>
+    <a href="#" ng-if="activePage.directions.left" ng-click="transition('left')">click me</a>
+    <a href="#" ng-if="activePage.directions.top" ng-click="transition('top')">click me yes</a>
 
 </div>

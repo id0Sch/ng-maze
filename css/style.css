@@ -1,0 +1,109 @@
+/*noinspection CssUnknownTarget*/
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300|Raleway:500|Pacifico);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-family: Calibri, monospace;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+/*noinspection ALL*/
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html {
+  overflow-y: hidden; 
+    
+}
+
+body {
+    text-align: center;
+}
+
+.container{
+    height: 100vh;
+    background-color: rgb(17, 21, 23);
+    overflow: hidden;
+}
+.page-container {
+    margin: 14vh;
+    overflow: hidden;
+    height: 72vh;
+    border: 1px lime dotted;
+    position: relative
+}
+.active-page {
+  background-color: #fafafa;
+  height: calc(72vh);
+  width: calc(100vw - 28vh);
+  position: absolute;
+
+  /*margin-top: 50vh;*/
+  /*margin-left: 50vw;*/
+}
+.direction-icon{
+  color : #fafafa;
+}
+.direction-btn {
+  position: fixed;
+  background-color: inherit;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+}
+.direction-btn:active{
+  background-color: #4B4C4E;
+}
+.direction-btn:hover{
+  background-color: #4B4C4E;
+}
+
+.direction-btn.left {
+    top : calc(50% - 16px);
+    left: calc(7vh - 11px);
+}
+.direction-btn.right {
+    top : calc(50% - 16px);
+    right: calc(7vh - 11px);
+}
+.direction-btn.up {
+    top : calc(7vh - 16px);
+    right: calc(50% - 11px);
+}
+.direction-btn.down {
+    bottom : calc(7vh - 16px);
+    right: calc(50% - 11px);
+}

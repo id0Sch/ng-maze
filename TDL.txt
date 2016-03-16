@@ -1,0 +1,8 @@
+
+To do:
+
+    Create ~current.
+    Create ~random.
+    Dynamic load+unload of slide css.
+    Disable and fade navigation arrows durng transition.
+    
